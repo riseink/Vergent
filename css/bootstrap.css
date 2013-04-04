@@ -7,6 +7,12 @@
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
+.feature-text{
+	text-align: left;
+	color: #444;
+	font-size: 14px;
+	margin: 10px 0 0 0;
+}
 .green{
 	color: #4db748;
 }
@@ -28,21 +34,31 @@
 
 .green1{
 	background-color: #4db748;
+	color: #fff;
+	padding: 5px;
 }
 .yellow1{
 	background-color: #f5b134;
+	color: #fff;
+	padding: 5px;
 	
 }
 
 .magenta1{
 	background-color: #ed1c91;
+	color: #fff;
+	padding: 5px;
 }
 
 .red1{
 	background-color: #ed1846;
+	color: #fff;
+	padding: 5px;
 }
 .blue1 {
 	background-color: #2a57a8;
+	color: #fff;
+	padding: 5px;
 }
 
 .h200{
@@ -379,6 +395,11 @@ a:focus {
   width: 300px;
 }
 
+.span4 img{
+  width: 100%;
+  margin: 4% 0;
+}
+
 .span3 {
   width: 220px;
 }
@@ -705,8 +726,8 @@ p {
 
 .lead {
   margin-bottom: 20px;
-  font-size: 21px;
-  font-weight: 200;
+  font-size: 19px;
+  font-weight: 150;
   line-height: 30px;
 }
 
@@ -815,7 +836,7 @@ h3 {
 }
 
 h1 {
-  font-size: 38.5px;
+  font-size: 34.5px;
 }
 
 h2 {
@@ -4456,7 +4477,7 @@ input[type="submit"].btn.btn-mini {
 .navbar .brand {
   display: block;
   float: left;
-  padding: 10px 20px 10px;
+  padding: 5px 10px 5px;
   margin-left: -20px;
   font-size: 20px;
   font-weight: 200;
@@ -4464,7 +4485,7 @@ input[type="submit"].btn.btn-mini {
   text-shadow: 0 1px 0 #ffffff;
 }
 .navbar .brand img{
-	height:30px;
+	height:50px;
 }
 
 .navbar .brand:hover,
@@ -4642,8 +4663,8 @@ input[type="submit"].btn.btn-mini {
   position: relative;
   left: 0;
   display: block;
-  float: left;
-  margin: 0 10px 0 0;
+  float: right;
+  margin: 10px 200px 0 0;
 }
 
 .navbar .nav.pull-right {
