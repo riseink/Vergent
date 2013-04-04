@@ -13,6 +13,18 @@
 	font-size: 14px;
 	margin: 10px 0 0 0;
 }
+.feature-text2{
+	text-align: left;
+	color: #444;
+	font-size: 14px;
+	margin: 10px 0 0 0;
+	line-height:50%;
+}
+
+.m15{
+	margin: 0 0 0 15px;
+}
+
 .green{
 	color: #4db748;
 }
@@ -4485,7 +4497,7 @@ input[type="submit"].btn.btn-mini {
   text-shadow: 0 1px 0 #ffffff;
 }
 .navbar .brand img{
-	height:50px;
+	height:45px;
 }
 
 .navbar .brand:hover,
