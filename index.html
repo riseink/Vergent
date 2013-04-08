@@ -1,8 +1,12 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
+	
     <meta charset="utf-8">
     <title>Vergent Digital</title>
+	<link href='http://fonts.googleapis.com/css?family=Carrois+Gothic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -26,84 +30,6 @@
 	    }
 
 
-
-	    /* CUSTOMIZE THE NAVBAR
-	    -------------------------------------------------- */
-
-	    /* Special class on .container surrounding .navbar, used for positioning it into place. */
-	    .navbar-wrapper {
-	      position: absolute;
-	      top: 0;
-	      left: 0;
-	      right: 0;
-	      z-index: 10;
-	      margin-top: 20px;
-	      margin-bottom: -90px; /* Negative margin to pull up carousel. 90px is roughly margins and height of navbar. */
-	    }
-	    .navbar-wrapper .navbar {
-
-	    }
-
-	    /* Remove border and change up box shadow for more contrast */
-	    .navbar .navbar-inner {
-	      border: 0;
-	      -webkit-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-	         -moz-box-shadow: 0 2px 10px rgba(0,0,0,.25);
-	              box-shadow: 0 2px 10px rgba(0,0,0,.25);
-	    }
-
-	    /* Downsize the brand/project name a bit */
-	    .navbar .brand {
-	      padding: 10px 0; /* Increase vertical padding to match navbar links */
-	      font-size: 16px;
-	      font-weight: bold;
-	      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
-		  margin-left: 5px;
-	    }
-
-	    /* Navbar links: increase padding for taller navbar */
-	    .navbar .nav > li > a {
-	      padding: 15px 20px;
-	    }
-
-	    /* Offset the responsive button for proper vertical alignment */
-	    .navbar .btn-navbar {
-	      margin-top: 10px;
-	    }
-
-
-
-	    /* CUSTOMIZE THE CAROUSEL
-	    -------------------------------------------------- */
-
-	    /* Carousel base class */
-
-	/*Fade*/
-	
-/*		.carousel.carousel-fade .item {
-		  -webkit-transition: opacity 2s ease-in-out;
-		  -moz-transition: opacity 2s ease-in-out;
-		  -ms-transition: opacity 2s ease-in-out;
-		  -o-transition: opacity 2s ease-in-out;
-		  transition: opacity 2s ease-in-out;
-		}
-		.carousel.carousel-fade .active.left,
-		.carousel.carousel-fade .active.right {
-		  left: 0;
-		  z-index: 2;
-		  opacity: 0;
-		  filter: alpha(opacity=0);
-		}
-		.carousel.carousel-fade .next,
-		.carousel.carousel-fade .prev {
-		  left: 0;
-		  z-index: 1;
-		}
-
-		.carousel.carousel-fade .carousel-control {
-		  z-index: 3;
-		}
-		*/
 	    .carousel {
 	      margin-bottom: 60px;
 	    }
@@ -146,7 +72,7 @@
 			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#80000000',GradientType=0 ); /* IE6-8 */
 		  border-radius:6px;
 	      position: static;
-	      max-width: 550px;
+	      max-width: 400px;
 	      padding: 0 20px 20px 20px;
 	      margin-top: 10%;
 	
@@ -158,6 +84,18 @@
 	      line-height: 1.25;
 	      color: #fff;
 	      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+		  font-family: 'EB Garamond', serif;
+	
+	    }
+	
+	    .carousel-caption h1{
+	      margin: 0;
+		  padding: 10px 5px;
+	      line-height: 1.25;
+	      color: #fff;
+	      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+		  font-family: 'Carrois Gothic', sans-serif;
+	
 	    }
 	    .carousel-caption .btn {
 	      margin-top: 10px;
@@ -329,25 +267,16 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="brand" href="#"><img src="img/logo2.svg"></a>
+            <a class="brand" href="#"><img src="img/VergentLogo.png"></a>
             <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
             <div class="nav-collapse collapse">
               <ul class="nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li class="nav-header">Nav header</li>
-                    <li><a href="#">Separated link</a></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="services.html">Service & Excellence</a></li>
+                <li><a href="portal.html" target="blank">Client Portal</a></li>
+                <li><a href="contact.html">Contact</a></li>
                 </li>
               </ul>
             </div><!--/.nav-collapse -->
@@ -368,7 +297,8 @@
           <div class="container">
             <div class="carousel-caption">
               <h1>impactful leadership</h1>
-              <p class="lead">partner with us and we'll take you to the <strong class="green">extreme expressions of
+              <p class="lead">Partner with us...<br>
+			and we'll take you to the  <strong class="green">extreme expressions of
 			 brand.</strong></p>
               <a class="btn btn-large btn-success" href="#">Learn more</a>
             </div>
@@ -379,8 +309,8 @@
           <div class="container">
             <div class="carousel-caption">
               <h1>pick your poison</h1>
-              <p class="lead">we deploy our craft with great care using your <strong class="yellow">user's 			experiences</strong>to lead all engagements to a potent solution.
-			</p>
+              <p class="lead"> We deploy our craft with great care by using <strong class="yellow">user's experiences</strong> to lead engagements to a potent solution.</p>
+			
               <a class="btn btn-large btn-success" href="#">Learn more</a>
             </div>
           </div>
@@ -390,7 +320,8 @@
           <div class="container">
             <div class="carousel-caption">
               <h1>your brand in the world's hands</h1>
-              <p class="lead"><strong class="magenta">responsive design </strong>for a mobile world.  Mobile internet use continues to surge  <strong class="magenta"> 66% annually*</strong> -- static sites are out.</p>
+			
+              <p class="lead"><strong class="magenta">Responsive design </strong>is required for a mobile world...   mobile internet use is growing <strong class="magenta"> 66% annually</strong> -- static sites simply can't compete.</p>
               <a class="btn btn-large btn-success" href="#">Learn more</a>
             </div>
           </div>
@@ -411,11 +342,11 @@
       <!-- Three columns of text below the carousel -->
       <div class="row">
         <div class="span4">
-          <h2 class="green1">design &amp; development</h2>
+          <h2 class="green1">design & development</h2>
 		  <img src="img/convergence1.jpg">
 
-          <p class="feature-text"><strong>We bring world-class talent together for a
-			thoughtful and  creative approach to :</strong></p>
+          <p class="feature-text"><strong>We bring world-class talent together
+			for thoughtful and creative approaches to:</strong></p>
 			<ul class="feature-text m15">
 			<li>Visual Design</li>
 			<li>Back-End Development</li>
@@ -426,47 +357,47 @@
 			</ul>
         </div>
         <div class="span4">
-          <h2 class="yellow1">how do I stack up?</h2>
+          <h2 class="yellow1">design & language</h2>
 		  <img src="img/convergence2.jpg">
 
           
-		   <p class="feature-text"> <strong>Graphic Design &amp; Visual Design : </strong> Look and feel?</p>
-           <p class="feature-text2"> <strong>Information Architecture : </strong>  Organization?</p>
-           <p class="feature-text2"> <strong>UI Design :  </strong>  Work <em>before</em> and <em>while</em> in use? </p>
-           <p class="feature-text2"> <strong>Interaction Design :  </strong>  Work <em>after</em> usage? </p>
-           <p class="feature-text2"> <strong>Web Design : </strong> Work in a browser? </p>
-           <p class="feature-text2"> <strong>UX Design : </strong> Thoughts while using it? </p>
-           <p class="feature-text2"> <strong>Development : </strong> Behind the curtain intelligence? </p> 
+          <p class="feature-text"><strong>We bring the industry’s swiftly changing vocabulary <br>
+		to you & your project for effective communication:</strong></p>
+			<ul class="feature-text m15">
+			<li title="How does my website look and feel?">Graphic Design & Visual Design </li>
+			<li title="How is my website organized?">Information Architecture</li>
+			<li title="How is my website supposed to work before and while in use?">UI Design</li>
+			<li title="How does my website work after usage?">Interaction Design</li>
+			<li title="How does my website work in a browser?">Web Design</li>
+			<li title="What are my users thinking while using it?">UX Design</li>
+			<li title="What are the programming techniques that make things work and allow for easy changes?">Development</li>
+			</ul>
         </div>
         <div class="span4">
-          <h2 class="magenta1">the journey</h2>
+          <h2 class="magenta1">design & the journey</h2>
 		  <img src="img/convergence3.jpg">
 
-          <p class="feature-text"> <strong>What should I expect going forward? What is the creative process?	</strong></p>
-		
-			<ol class="feature-text m15">
-			<li>meet with you to define the project</li>
-			<li>help refine your business goals</li>
-			<li>perform a heuristic analysis of your site</li>
-			<li>review competitive sites</li>
-			<li>conduct field research and create UX personas</li>
-			<li>create effective content </li>
-			<li>employ user experience design</li>
-			<li>provide style and wireframe reviews </li>
-			<li>execute usability testing of new designs</li>
-			<li>complete coding development &amp; testing</li>
-			<li>deploy &amp; maintain your site </li>
-			</ol>
+          <p class="feature-text"><strong>We bring our industry’s best-practices
+		to ensure your design journey is rewarding. Our team helps by:</strong></p>
+			<ul class="feature-text m15">
+			<li>Defining your project & refining your goals</li>
+			<li>Performing heuristic analysis of your site</li>
+			<li>Conducting real field research</li>
+			<li>Employing user experience-based design</li>
+			<li>Executing usability testing of new designs</li>
+			<li>Coding, testing, deploying & maintaining your site</li>
+			</ul>
         </div>
       </div><!-- /.row -->
 
 
 
       <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p class"green"> (c) 2013 Vergent Digital LLC, All Rights Reserved <a href="#">Privacy</a> · <a href="#">Terms</a></p>
-      </footer>
+<br>
+    <footer>
+      <p class="green"> (c) 2013 Vergent Digital LLC, All Rights Reserved</p>
+    </footer>
+
 
     </div><!-- /.container -->
 

@@ -109,7 +109,8 @@
 }
 
 @media (min-width: 1200px) {
-  .row {
+  .row { 
+	margin-top: -40px;
     margin-left: -30px;
     *zoom: 1;
   }
@@ -974,7 +975,7 @@
   .navbar .brand {
     padding-right: 10px;
     padding-left: 10px;
-    margin: 0 0 0 -5px;
+    margin: 0 0 0 -0px;
   }
   .nav-collapse {
     clear: both;
@@ -1023,13 +1024,13 @@
   }
   .navbar-inverse .nav-collapse .nav > li > a,
   .navbar-inverse .nav-collapse .dropdown-menu a {
-    color: #999999;
+    color: ;
   }
   .navbar-inverse .nav-collapse .nav > li > a:hover,
   .navbar-inverse .nav-collapse .nav > li > a:focus,
   .navbar-inverse .nav-collapse .dropdown-menu a:hover,
   .navbar-inverse .nav-collapse .dropdown-menu a:focus {
-    background-color: #111111;
+    background-color: black;
   }
   .nav-collapse.in .btn-group {
     padding: 0;
