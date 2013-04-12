@@ -8,16 +8,12 @@
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
 .feature-text{
-	  font-family: 'EB Garamond', serif;
-	
 	text-align: left;
 	color: #444;
 	font-size: 14px;
 	margin: 10px 0 0 0;
 }
 .feature-text2{
-	  font-family: 'EB Garamond', serif;
-	
 	text-align: left;
 	color: #444;
 	font-size: 16px;
@@ -26,7 +22,6 @@
 }
 
 .headline{
-	font-family: 'Carrois Gothic', sans-serif;
 	font-size: 72px;
 	color: #444;
 	text-align: center;
@@ -37,7 +32,6 @@
 }
 
 .sub-head{
-	font-family: 'EB Garamond', serif;
 	font-size: 28px;
 	color: #444;
 	text-align: center;
@@ -57,18 +51,17 @@
 	padding: 20px 0 0 50px;
 	
 }
+.about li{
+  padding-top: 15px;
+}
 
 .gray{
-	  font-family: 'EB Garamond', serif;
-	
 	color: #444;
 	line-height: 100%;
 	
 	
 }
 .gray2{
-	  font-family: 'EB Garamond', serif;
-	
 	color: #444;
 	line-height: 100%;
 	text-align:center;
@@ -86,16 +79,12 @@
 }
 
 .name{
-	  font-family: 'EB Garamond', serif;
-	
 	text-align: left;
 	font-size: 28px;
 	margin: 10px 0 0 0;
 	line-height: 200%;
 }
 .name2{
-	  font-family: 'EB Garamond', serif;
-	
 	text-align: center;
 	font-size: 28px;
 	margin: 10px 0 0 0;
@@ -103,8 +92,6 @@
 }
 
 .title{
-	  font-family: 'EB Garamond', serif;
-	
 	text-align: left;
 	color: #444;
 	font-size: 18px;
@@ -138,19 +125,23 @@
 }
 
 .green1{
-	  font-family: 'EB Garamond', serif;
-	
 	background-color: #4db748;
 	color: #fff;
 	padding: 5px;
 }
 .yellow1{
-	  font-family: 'EB Garamond', serif;
-	
 	background-color: #f5b134;
 	color: #fff;
 	padding: 5px;
 	
+}
+.indent {
+	margin: 0 0 0 5%;
+}
+
+.right{
+	float:right;
+	margin: 0 5% 0 0 ;
 }
 
 .border{
@@ -160,8 +151,6 @@
 	
 }
 .magenta1{
-	  font-family: 'EB Garamond', serif;
-	
 	background-color: #ed1c91;
 	color: #fff;
 	padding: 5px;
@@ -550,6 +539,10 @@ float: left;
 .span1 {
   width: 60px;
 }
+.span1 img {
+vertical-align: center;
+}
+
 
 .offset12 {
   margin-left: 980px;
@@ -4581,6 +4574,7 @@ input[type="submit"].btn.btn-mini {
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
           border-radius: 4px;
+  /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff2f2f2', GradientType=0);*/
   *zoom: 1;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
      -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
