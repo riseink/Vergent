@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	
+    <meta charset="utf-8">
+    <title>Vergent Digital</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<!--[if lt IE 9]>
+	<script src="dist/html5shiv.js"></script>
+	<![endif]-->
+
+    <!-- Le styles -->
+    <link href="css/carousel.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+<style>
+
+	    /* GLOBAL STYLES
+	    -------------------------------------------------- */
+	    /* Padding below the footer and lighter body text */
+
+	    body {
+	      padding-bottom: 40px;
+	      color: #5a5a5a;
+	    }
+
+
+	    .carousel {
+	      margin-bottom: 60px;
+	    }
+
+	    .carousel .container {
+	      position: relative;
+	      z-index: 9;
+	    }
+
+	    .carousel-control {
+	      height: 80px;
+	      margin-top: 0;
+	      font-size: 120px;
+	      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+	      background-color: transparent;
+	      border: 0;
+	      z-index: 10;
+	    }
+
+	    .carousel .item {
+	      height: 500px;
+	    }
+	    .carousel img {
+	      position: absolute;
+	      top: 0;
+	      left: 0;
+	      min-width: 100%;
+	      height: 500px;
+	    }
+
+	    .carousel-caption {
+			/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+			background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjUiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIwLjUiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+			background: -moz-linear-gradient(top,  rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.5) 100%); /* FF3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.5)), color-stop(100%,rgba(0,0,0,0.5))); /* Chrome,Safari4+ */
+			background: -webkit-linear-gradient(top,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%); /* Chrome10+,Safari5.1+ */
+			background: -o-linear-gradient(top,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%); /* Opera 11.10+ */
+			background: -ms-linear-gradient(top,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%); /* IE10+ */
+			background: linear-gradient(to bottom,  rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.5) 100%); /* W3C */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#80000000',GradientType=0 ); /* IE6-8 */
+		  border-radius:6px;
+	      position: static;
+	      max-width: 400px;
+	      padding: 0 20px 20px 20px;
+	      margin-top: 10%;
+	
+	    }
+	    .carousel-caption h1,
+	    .carousel-caption .lead {
+	      margin: 0;
+		  padding: 10px 5px;
+	      line-height: 1.25;
+	      color: #fff;
+	      text-shadow: 0 1px 1px rgba(0,0,0,.4);
+	    }
+	    .carousel-caption .btn {
+	      margin-top: 10px;
+	    }
+
+
+
+	    /* MARKETING CONTENT
+	    -------------------------------------------------- */
+
+	    /* Center align the text within the three columns below the carousel */
+	    .marketing .span4 {
+	      text-align: center;
+	    }
+	    .marketing h2 {
+	      font-weight: normal;
+	    }
+	    .marketing .span4 p {
+		margin: 20px 0;
+	    }
+
+
+	    /* Featurettes
+	    ------------------------- */
+
+	    .featurette-divider {
+	      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+	    }
+	    .featurette {
+	      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+	      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+	    }
+	    .featurette-image {
+	      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+	    }
+
+	    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+	    .featurette-image.pull-left {
+	      margin-right: 40px;
+	    }
+	    .featurette-image.pull-right {
+	      margin-left: 40px;
+	    }
+
+	    /* Thin out the marketing headings */
+	    .featurette-heading {
+	      font-size: 50px;
+	      font-weight: 300;
+	      line-height: 1;
+	      letter-spacing: -1px;
+	    }
+
+
+
+	    /* RESPONSIVE CSS
+	    -------------------------------------------------- */
+
+	    @media (max-width: 979px) {
+
+	      .container.navbar-wrapper {
+	        margin-bottom: 0;
+	        width: auto;
+	      }
+	      .navbar-inner {
+	        border-radius: 0;
+	        margin: -20px 0;
+	      }
+
+	      .carousel .item {
+	        height: 500px;
+	      }
+	      .carousel img {
+	        width: auto;
+	        height: 500px;
+	      }
+
+	      .featurette {
+	        height: auto;
+	        padding: 0;
+	      }
+	      .featurette-image.pull-left,
+	      .featurette-image.pull-right {
+	        display: block;
+	        float: none;
+	        max-width: 40%;
+	        margin: 0 auto 20px;
+	      }
+	    }
+
+
+	    @media (max-width: 767px) {
+
+	      .navbar-inner {
+	        margin: -20px;
+	      }
+
+	      .carousel {
+	        margin-left: -20px;
+	        margin-right: -20px;
+	      }
+	      .carousel .container {
+
+	      }
+	      .carousel .item {
+	        height: 300px;
+	      }
+	      .carousel img {
+	        height: 300px;
+	      }
+	      .carousel-caption {
+			  background: #333333;
+			  background: rgba(0, 0, 0, 0.75);
+	        width: 65%;
+	        padding: 0 70px;
+	        margin-top: 100px;
+	      }
+	      .carousel-caption h1 {
+	        font-size: 30px;
+	      }
+	      .carousel-caption .lead,
+	      .carousel-caption .btn {
+	        font-size: 18px;
+	      }
+
+	      .marketing .span4 + .span4 {
+	        margin-top: 40px;
+	      }
+
+	      .featurette-heading {
+	        font-size: 30px;
+	      }
+	      .featurette .lead {
+	        font-size: 18px;
+	        line-height: 1.5;
+	      }
+
+	    }
+ </style>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  <style type="text/css"></style><style id="holderjs-style" type="text/css">.holderjs-fluid {font-size:16px;font-weight:bold;text-align:center;font-family:sans-serif;margin:0}</style>
+</head>
+
+  <body>
+
+
+
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#"><img src="img/VergentLogo.png"></a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="services.html">Service & Excellence</a></li>
+                <li><a href="portal.html" target="blank">Client Portal</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                </li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+
+
+    <!-- Carousel
+    ================================================== -->
+<div id="myCarousel" class="carousel slide">
+	    <div class="carousel-inner">
+        <div class="item active">
+          <img src="img/slide-01a.png" alt="">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>clean your <strong class="green">competition's </strong><strong class="magenta">clock</strong></h1>
+              <p class="lead">Our job is to lead your company to the <strong class="yellow">strongest expression of its brand</strong></p> in all its digital communications and commerce. We’re here to both tell you the truth, and employ the industry’s best practices. We create user experiences and business outcomes worthy of the great products, great people, and great stories behind your company.</p>
+              <a class="btn btn-large btn-success" href="index.html">Go Back</a>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+    </div><!-- /.carousel -->
+
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="span4">
+          <h2 class="green1">design & development</h2>
+		  <img src="img/convergence1.jpg">
+
+          <p class="feature-text"><strong>We bring world-class talent together
+			for thoughtful and creative approaches to:</strong></p>
+			<ul class="feature-text m15">
+			<li>Visual Design</li>
+			<li>Back-End Development</li>
+			<li>Content Creation</li>
+			<li>Mobile Solutions</li>
+			<li>Interactive Solutions</li>
+			<li>Social Media Solutions</li>
+			</ul>
+        </div>
+        <div class="span4">
+          <h2 class="yellow1">design & language</h2>
+		  <img src="img/convergence2.jpg">
+
+          
+          <p class="feature-text"><strong>We bring the industry’s swiftly changing vocabulary <br>
+		to you & your project for effective communication:</strong></p>
+			<ul class="feature-text m15">
+			<li title="How does my website look and feel?">Graphic Design & Visual Design </li>
+			<li title="How is my website organized?">Information Architecture</li>
+			<li title="How is my website supposed to work before and while in use?">UI Design</li>
+			<li title="How does my website work after usage?">Interaction Design</li>
+			<li title="How does my website work in a browser?">Web Design</li>
+			<li title="What are my users thinking while using it?">UX Design</li>
+			<li title="What are the programming techniques that make things work and allow for easy changes?">Development</li>
+			</ul>
+        </div>
+        <div class="span4">
+          <h2 class="magenta1">design & the journey</h2>
+		  <img src="img/convergence3.jpg">
+
+          <p class="feature-text"><strong>We bring our industry’s best-practices
+		to ensure your design journey is rewarding. Our team helps by:</strong></p>
+			<ul class="feature-text m15">
+			<li>Defining your project & refining your goals</li>
+			<li>Performing heuristic analysis of your site</li>
+			<li>Conducting real field research</li>
+			<li>Employing user experience-based design</li>
+			<li>Executing usability testing of new designs</li>
+			<li>Coding, testing, deploying & maintaining your site</li>
+			</ul>
+        </div>
+      </div><!-- /.row -->
+
+
+
+      <!-- FOOTER -->
+<br>
+    <footer>
+      <p class="green"> (c) 2013 Vergent Digital LLC, All Rights Reserved</p>
+    </footer>
+
+
+    </div><!-- /.container -->
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-transition.js"></script>
+    <script src="js/bootstrap-alert.js"></script>
+    <script src="js/bootstrap-modal.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-scrollspy.js"></script>
+    <script src="js/bootstrap-tab.js"></script>
+    <script src="js/bootstrap-tooltip.js"></script>
+    <script src="js/bootstrap-popover.js"></script>
+    <script src="js/bootstrap-button.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+    <script src="js/bootstrap-carousel.js"></script>
+    <script src="js/bootstrap-typeahead.js"></script>
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    </script>
+    <script src="js/holder.js"></script>
+  
+
+</body></html>
